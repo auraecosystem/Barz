@@ -1,0 +1,6 @@
+DiamondStorage storage ds = diamondStorage();
+bytes4 functionSelector = bytes4(keccak256("myFunction(uint256)"));
+// get facet address of function
+address facet = ds.selectorToFacet[functionSelector];
+bytes memory myFunctionCall = abi.encodeWithSelector(functionSelector, 4);
+(bool success, bytes memory result) = address(facet).delegatecall(myFunctionCall);
