@@ -1,0 +1,28 @@
+{
+  "event_type": "cg.coin.info.updated",
+  "data": {
+    "id": "bitcoin",
+    "symbol": "btc",
+    "name": "Bitcoin",
+    "changes": [
+      {
+        "field": "categories",
+        "change_type": "addition",
+        "old_value": null,
+        "new_value": "Store of Value"
+      },
+      {
+        "field": "links.facebook_username",
+        "change_type": "update",
+        "old_value": "bitcoins",
+        "new_value": "bitcoin"
+      },
+      {
+        "field": "platforms.ethereum",
+        "change_type": "removal",
+        "old_value": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+        "new_value": null
+      }
+    ]
+  }
+}
